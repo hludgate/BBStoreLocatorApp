@@ -115,13 +115,15 @@ var map = new mapboxgl.Map({
           link.href = '#';
           link.className = 'title';
           link.id = "link-" + prop.id;
-          link.innerHTML = prop.address;
+          link.innerHTML = prop.Name;
 
           /* Add details to the individual listing. */
           var details = listing.appendChild(document.createElement('div'));
-          details.innerHTML = prop.city;
-          if (prop.phone) {
+          if (prop.Phone) {
             details.innerHTML += ' · ' + prop.phoneFormatted;
+          }
+          if (prop.Website) {
+            details.innerHTML += ' . ' + prop.Website
           }
 
           /**
@@ -167,7 +169,7 @@ var map = new mapboxgl.Map({
         if (popUps[0]) popUps[0].remove();
         var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
-          .setHTML('<h3>Sweetgreen</h3>' +
-            '<h4>' + currentFeature.properties.address + '</h4>')
+          .setHTML('<h3>' + currentFeature.properties.Name + '</h3>' +
+            '<h4>' + currentFeature.properties.Address + '</h4>')
           .addTo(map);
       }
