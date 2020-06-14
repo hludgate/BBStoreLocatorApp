@@ -122,10 +122,14 @@ var map = new mapboxgl.Map({
           if (prop.Phone) {
             details.innerHTML += ' · ' + prop.phoneFormatted;
           }
+          var a = listing.appendChild(document.createElement('a'));
           if (prop.Website) {
-            details.innerHTML += ' . ' + prop.Website
+            var linkText = document.createTextNode("Website");
+            a.appendChild(linkText);
+            a.innerHTML = ' · ' +"Website";
+            a.href = prop.Website;
           }
-
+          
           /**
            * Listen to the element and when it is clicked, do four things:
            * 1. Update the `currentFeature` to the store associated with the clicked link
