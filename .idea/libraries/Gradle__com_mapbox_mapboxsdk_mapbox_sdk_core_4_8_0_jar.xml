@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-sdk-core/4.8.0/801679f9a75aeb7c7f1ba04ff5451f700add529e/mapbox-sdk-core-4.8.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-sdk-core/4.8.0/304fc7dc8a41350777c25c6bb7a0a0f99af102f8/mapbox-sdk-core-4.8.0-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mapbox.mapboxsdk/mapbox-sdk-core/4.8.0/833811fb91408b8d759eb73c161a13b30b5a338a/mapbox-sdk-core-4.8.0-sources.jar!/" />
     </SOURCES>

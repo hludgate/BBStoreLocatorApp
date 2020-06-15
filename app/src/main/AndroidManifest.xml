@@ -12,8 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Gray">
-        <activity android:name="com.mapbox.storelocator.activity.MapActivity"/>
-        <activity android:name="com.mapbox.storelocator.activity.ThemePickerActivity">
+        <activity android:name="com.mapbox.storelocator.activity.MapActivity">
+<!--        <activity android:name="com.mapbox.storelocator.activity.ThemePickerActivity">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

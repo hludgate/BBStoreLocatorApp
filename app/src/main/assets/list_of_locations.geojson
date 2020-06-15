@@ -4,16 +4,16 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Location 1",
+        "name": "Rainbow Restaurant ",
         "hours": "6am - 5pm",
-        "phone": "(555) 555-4355",
-        "description": "Location #1 description"
+        "phone": "(301) 947-0099",
+        "description": "312 E Diamond Ave Gaithersburg, MD 20877"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -73.966889,
-          40.761926
+          -77.192673,
+          39.142548
         ]
       }
     },
