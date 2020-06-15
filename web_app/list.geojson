@@ -1,0 +1,59 @@
+var stores ={
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.200255,
+                    39.143278
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "117 N Frederick Ave, Gaithersburg, MD 20877",
+                "Name": "African Palace",
+                "Phone": "3019265244",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "301-926-5244"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.025736,
+                    38.998039
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "811 Roeder Rd, Silver Spring, MD 20910",
+                "Name": "Bete Ethiopian Cuisine & Cafe",
+                "Phone": "3015882225",
+                "Type": "Restaurant",
+                "Website": "https://www.beteethiopia.com/",
+                "phoneFormatted": "301-588-2225"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.049765,
+                    39.040206
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2310 Price Ave, Wheaton, MD 20902",
+                "Name": "Erta Ale Ethiopian Restaurant",
+                "Phone": "12402213349",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "1-240-221-3349"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}
