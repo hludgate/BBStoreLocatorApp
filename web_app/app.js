@@ -13,7 +13,7 @@ var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/hludgate/ckbd6q5yf0uu21ils2fvi9ud5',
   center: [-77.034084, 38.909671],
-  zoom: 14
+  zoom: 10
 });
 
 /**

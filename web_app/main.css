@@ -40,8 +40,8 @@ body {
   }
 
   a {
-    color:#404040;
-    text-decoration:none;
+    color:blue;
+    text-decoration:underline;
   }
 
   a:hover {
@@ -84,6 +84,7 @@ body {
   .listings .item.active {
     background-color:#f8f8f8;
   }
+
   ::-webkit-scrollbar {
     width:3px;
     height:3px;
