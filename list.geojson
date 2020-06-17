@@ -1,0 +1,149 @@
+var stores ={
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.200255,
+                    39.143278
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "117 N Frederick Ave, Gaithersburg, MD 20877",
+                "Name": "African Palace",
+                "Phone": "3019265244",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "301-926-5244"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.025736,
+                    38.998039
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "811 Roeder Rd, Silver Spring, MD 20910",
+                "Name": "Bete Ethiopian Cuisine & Cafe",
+                "Phone": "3015882225",
+                "Type": "Restaurant",
+                "Website": "https://www.beteethiopia.com/",
+                "phoneFormatted": "301-588-2225"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.049765,
+                    39.040206
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2310 Price Ave, Wheaton, MD 20902",
+                "Name": "Erta Ale Ethiopian Restaurant",
+                "Phone": "12402213349",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "1-240-221-3349"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.040117,
+                    39.008072
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "9331 Georgia Ave, Silver Spring, MD 20910",
+                "Name": "Heavenly Wings",
+                "Phone": "2406607558",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "240-660-7558"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.272839,
+                    38.631006
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "14830 Build America Dr, Woodbridge, VA 22191",
+                "Name": "Aburi Gardens International Restaurant",
+                "Phone": "7034901100",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "703-490-1100"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.272792,
+                    38.630743
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "14827 Build America Dr, Woodbridge, VA 22191",
+                "Name": "Betanya Ethiopian Market & Cafe ",
+                "Phone": "7034911465",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "703-491-1465"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.270001,
+                    38.635758
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "14561 Jefferson Davis Hwy, Woodbridge, VA 22191",
+                "Name": "Irie Caribbean American ",
+                "Phone": "7034999995",
+                "Type": "Restaurant",
+                "Website": "http://iriecaribbeanfood.com/",
+                "phoneFormatted": "703-499-9995"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.273816,
+                    38.63278
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1972 Daniel Stuart Square, Woodbridge, VA 22191",
+                "Name": "Le Bon Grill African Restaurant ",
+                "Phone": "7034998010",
+                "Type": "",
+                "Website": "",
+                "phoneFormatted": "703-499-8010"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}
