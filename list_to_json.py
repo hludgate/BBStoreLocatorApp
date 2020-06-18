@@ -37,7 +37,8 @@ with open(csvFilePath) as file:
         lat = location.latitude
         long = location.longitude
         point = Point((long,lat))
-        prop = {"Name":name,"Address":add,"Phone":phone,"phoneFormatted":format_phone,"Type":btype,"Website":web}
+        directions = rows['Directions']
+        prop = {"Name":name,"Address":add,"Phone":phone,"phoneFormatted":format_phone,"Type":btype,"Website":web, "Directions":directions}
         feat = Feature(geometry=point,properties=prop )
         features.append(feat)
         

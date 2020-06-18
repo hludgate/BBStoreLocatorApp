@@ -16,6 +16,11 @@ var map = new mapboxgl.Map({
   zoom: 10
 });
 
+
+
+
+
+
 /**
        * Assign a unique id to each store. You'll use this `id`
        * later to associate each point on the map with a listing
@@ -43,11 +48,13 @@ var map = new mapboxgl.Map({
          * - The location listings on the side of the page
          * - The markers onto the map
         */
-        buildLocationList(stores);
+        buildSorter();
+        buildLocationList(stores.features);
         addMarkers();
         //addSubmitBox();
         //addGoogleForm();
         addRecLink();
+        
       });
 
       function addRecLink()
@@ -76,33 +83,27 @@ var map = new mapboxgl.Map({
         listings.appendChild(ifrm);
       }
 
-      function addSubmitBox() {
-        var listings = document.getElementById('listings');
-        var f = document.createElement("form");
-        f.setAttribute('method',"post");
-        f.setAttribute('action',"");
-        var p = document.createElement("p");
-        p.innerHTML = 'If we missed any restaurants/bars/cafes in the DMV area please let us know.';
-
-        var i = document.createElement("input"); //input element, text
-        i.type = "text";
-        i.name = "Restaurant";
-        i.innerHTML = 'Restaurant';
-
-        var s = document.createElement("input"); //input element, Submit button
-        s.setAttribute('type',"submit");
-        s.setAttribute('value',"Submit");
-        var br = document.createElement("br");
-        f.appendChild(p);
-        f.appendChild(i);
-        f.appendChild(s);
-        f.appendChild(br);
-        f.appendChild(br);
-        f.appendChild(br);
-        listings.appendChild(f);
-
+      
+      function buildSorter() {
+        var values = ["Alphabetical", "Nearest to Me"];
+      
+        var select = document.createElement("select");
+        select.name = "sort";
+        select.id = "sort"
+      
+        for (const val of values) {
+          var option = document.createElement("option");
+          option.value = val;
+          option.text = val.charAt(0).toUpperCase() + val.slice(1);
+          select.appendChild(option);
+        }
+      
+        var label = document.createElement("label");
+        label.innerHTML = "Sort by: "
+        label.htmlFor = "sort";
+      
+        document.getElementById("container").appendChild(label).appendChild(select);
       }
-
       /**
        * Add a marker to the map for every store listing.
       **/
@@ -151,7 +152,10 @@ var map = new mapboxgl.Map({
        * Add a listing for each store to the sidebar.
       **/
       function buildLocationList(data) {
-        data.features.forEach(function(store, i){
+        
+
+        
+        data.forEach(function(store, i){
           /**
            * Create a shortcut for `store.properties`,
            * which will be used several times below.
@@ -174,17 +178,30 @@ var map = new mapboxgl.Map({
           link.innerHTML = prop.Name;
 
           /* Add details to the individual listing. */
-          var details = listing.appendChild(document.createElement('div'));
+          var address = listing.appendChild(document.createElement('div'));
+          address.innerHTML = prop.Address;
+          var phone = listing.appendChild(document.createElement('div'));
           if (prop.Phone) {
-            details.innerHTML += ' · ' + prop.phoneFormatted;
+            phone.innerHTML = prop.phoneFormatted;
           }
-          var a = listing.appendChild(document.createElement('a'));
+
+          var a1 = listing.appendChild(document.createElement('a'));
           if (prop.Website) {
             var linkText = document.createTextNode("Website");
-            a.appendChild(linkText);
-            a.innerHTML = ' · ' +"Website";
-            a.href = prop.Website;
+            a1.appendChild(linkText);
+            a1.innerHTML = "Website";
+            a1.href = prop.Website;
+            a1.className = 'link';
+            var br = listing.appendChild(document.createElement("br"));
           }
+          
+
+          var a2 = listing.appendChild(document.createElement('a'));
+          var dirText = document.createTextNode("Directions");
+          a2.appendChild(dirText);
+          a2.innerHTML = "Directions";
+          a2.href = prop.Directions;
+          a2.className = 'link';
           
           /**
            * Listen to the element and when it is clicked, do four things:
@@ -230,9 +247,87 @@ var map = new mapboxgl.Map({
         var popup = new mapboxgl.Popup({closeOnClick: false})
           .setLngLat(currentFeature.geometry.coordinates)
           .setHTML('<h3>' + currentFeature.properties.Name + '</h3>' +
-            '<h4>' + currentFeature.properties.Address + '</h4>')
+            '<h4>' + currentFeature.properties.Address + '</h4>' +
+            '<h4>' + currentFeature.properties.phoneFormatted + '</h4>' +
+            '<a href = ' + currentFeature.properties.Directions + '>Directions</a>' + 
+            '<p>    </p>' +
+            '<a href = ' + currentFeature.properties.Website + '>Website</a>')
           .addTo(map);
       }
 
+      function calculateDistance(lat1, lon1, lat2, lon2, unit) {
+        var radlat1 = Math.PI * lat1/180;
+        var radlat2 = Math.PI * lat2/180;
+        var radlon1 = Math.PI * lon1/180;
+        var radlon2 = Math.PI * lon2/180;
+        var theta = lon1-lon2;
+        var radtheta = Math.PI * theta/180;
+        var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+        dist = Math.acos(dist);
+        dist = dist * 180/Math.PI;
+        dist = dist * 60 * 1.1515;
+        if (unit=="K") { dist = dist * 1.609344 };
+        if (unit=="N") { dist = dist * 0.8684 };
+        return dist;
+      }
 
+      document.getElementById('Sort').onclick = function() {
+        var sort = document.getElementById("container")
+        var s = sort.options[sort.selectedIndex].value;
+        var listings = document.getElementById('listings');
+        listings.textContent = '';
+        rebuildLocationList(stores.features,s);
+        addRecLink();
+      }
 
+      function rebuildLocationList(data,sort) {
+        if (sort == 1) {
+          buildLocationList(data);
+        }
+        if (sort == 2) {
+          
+          var new_data = data.sort( function( a, b ) {
+            a = a.properties.Name.toLowerCase();
+            b = b.properties.Name.toLowerCase();
+        
+            return a < b ? -1 : a > b ? 1 : 0;
+          });
+          buildLocationList(new_data);
+        }
+        /*
+        if (sort ==3) {
+
+          if (navigator.geolocation) {
+
+            function getLocation() {
+        
+              navigator.geolocation.getCurrentPosition(showPosition);
+           
+          }
+          function showPosition(position) {
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            var new_data = data
+            data.forEach(function(store, i) {
+              new_data["distance"] = calculateDistance(store.geometry.coordinates[0],store.geometry.coordinates[1],lat,long,"K");
+            });
+            
+            new_data.sort(function(a, b) { 
+              return a.distance - b.distance;
+            });
+            buildLocationList(new_data);
+    
+          }  
+          */
+
+          
+          
+
+        
+        }
+      
+    
+      
+
+      
+ 
