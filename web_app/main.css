@@ -77,7 +77,20 @@ body {
     color:#00853e;
     font-weight:700;
   }
-
+  .listings .MissingLinkAlert {
+    display:block;
+    color:#850000;
+    font-weight:700;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+  }
+  .listings .MissingLink {
+    color:blue;
+    text-decoration:underline;
+    padding:10px;
+    padding-bottom: 50px;
+  }
   .listings .item .title small { font-weight:400; }
   .listings .item.active .title,
   .listings .item .title:hover { color:#8cc63f; }

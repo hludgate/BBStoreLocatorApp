@@ -46,15 +46,32 @@ var map = new mapboxgl.Map({
         buildLocationList(stores);
         addMarkers();
         //addSubmitBox();
-        addGoogleForm()
+        //addGoogleForm();
+        addRecLink();
       });
 
+      function addRecLink()
+      {
+        var p = document.createElement('p');
+        p.innerHTML = 'Are We Missing a Restaurant?'
+        p.className = 'MissingLinkAlert'
+        var link = document.createElement('a');
+        link.innerHTML = "Click Here to Add to the List";
+        link.href = "rec.html";
+        var listings = document.getElementById('listings');
+        var br = document.createElement("br");
+        link.className = 'MissingLink';
+        listings.appendChild(p);
+        listings.appendChild(link);
+
+
+      }
       function addGoogleForm() {
-        var ifrm = document.createElement('iframe')
+        var ifrm = document.createElement('iframe');
         ifrm.setAttribute('id','ifrm');
         ifrm.src = "https://docs.google.com/forms/d/e/1FAIpQLSe1Iq7xIgckzXbt55zhBiB8vggm5XvBPFF-nbmr0sL2GW_-eQ/viewform?embedded=true";
         ifrm.width = "100%";
-        ifrm.height = "407";
+        ifrm.height = "45%";
         var listings = document.getElementById('listings');
         listings.appendChild(ifrm);
       }
