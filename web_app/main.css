@@ -89,7 +89,8 @@ body {
     color:blue;
     text-decoration:underline;
     padding:10px;
-    padding-bottom: 100px;
+    font-weight:700;
+    padding-bottom: 500px;
   }
   .listings .item .title small { font-weight:400; }
   .listings .item.active .title,
