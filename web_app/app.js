@@ -45,7 +45,35 @@ var map = new mapboxgl.Map({
         */
         buildLocationList(stores);
         addMarkers();
+        //addSubmitBox();
       });
+
+      function addSubmitBox() {
+        var listings = document.getElementById('listings');
+        var f = document.createElement("form");
+        f.setAttribute('method',"post");
+        f.setAttribute('action',"");
+        var p = document.createElement("p");
+        p.innerHTML = 'If we missed any restaurants/bars/cafes in the DMV area please let us know.';
+
+        var i = document.createElement("input"); //input element, text
+        i.type = "text";
+        i.name = "Restaurant";
+        i.innerHTML = 'Restaurant';
+
+        var s = document.createElement("input"); //input element, Submit button
+        s.setAttribute('type',"submit");
+        s.setAttribute('value',"Submit");
+        var br = document.createElement("br");
+        f.appendChild(p);
+        f.appendChild(i);
+        f.appendChild(s);
+        f.appendChild(br);
+        f.appendChild(br);
+        f.appendChild(br);
+        listings.appendChild(f);
+
+      }
 
       /**
        * Add a marker to the map for every store listing.
@@ -177,3 +205,6 @@ var map = new mapboxgl.Map({
             '<h4>' + currentFeature.properties.Address + '</h4>')
           .addTo(map);
       }
+
+
+
