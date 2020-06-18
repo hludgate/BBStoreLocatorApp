@@ -46,7 +46,18 @@ var map = new mapboxgl.Map({
         buildLocationList(stores);
         addMarkers();
         //addSubmitBox();
+        addGoogleForm()
       });
+
+      function addGoogleForm() {
+        var ifrm = document.createElement('iframe')
+        ifrm.setAttribute('id','ifrm');
+        ifrm.src = "https://docs.google.com/forms/d/e/1FAIpQLSe1Iq7xIgckzXbt55zhBiB8vggm5XvBPFF-nbmr0sL2GW_-eQ/viewform?embedded=true";
+        ifrm.width = "100%";
+        ifrm.height = "407";
+        var listings = document.getElementById('listings');
+        listings.appendChild(ifrm);
+      }
 
       function addSubmitBox() {
         var listings = document.getElementById('listings');
