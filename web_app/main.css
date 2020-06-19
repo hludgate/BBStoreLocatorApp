@@ -4,7 +4,7 @@ body {
     margin:0;
     padding:0;
     -webkit-font-smoothing:antialiased;
-    background:#EFB543;
+    background:#ffffff;
   }
 
   * {
@@ -55,8 +55,9 @@ body {
   .heading {
     background:#fff;
     border-bottom:1px solid #eee;
-    min-height:100px;
-    line-height:100px;
+    min-height:15%;
+    line-height:15%;
+    min-width : 33.333%;
     font-family: sans-serif;
     background-color: #00853e;
     color: rgb(0, 0, 0);
@@ -64,11 +65,10 @@ body {
   }
 
   .header-img {
-    width: 25%;
-    height: 110px;
-    background: url('sankofaeats-full_logo-removebg.png');
-    background-size: cover;
-    
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
     
   }
 

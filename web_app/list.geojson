@@ -1196,6 +1196,595 @@ var stores ={
                 "phoneFormatted": "1-202-629-4040"
             },
             "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.960489,
+                    38.929428
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3176 Bladensburg Rd NE, Washington, DC 20018",
+                "Directions": "https://goo.gl/maps/nZ4Z6z5WwXuZyuLC7",
+                "Name": "Roaming Rooster",
+                "Phone": "12025078734",
+                "Type": "Restaurant",
+                "Website": "http://www.roamingroosterdc.com/",
+                "phoneFormatted": "1-202-507-8734"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.027862,
+                    38.961744
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "5933 Georgia Ave NW, Washington, DC 20011",
+                "Directions": "https://goo.gl/maps/N7a2ZgB7NWMCPWkd7",
+                "Name": "Oohh's and Aahh's Georgia Ave",
+                "Phone": "12028822902",
+                "Type": "Restaurant",
+                "Website": "http://www.oohhsnaahhs.com/",
+                "phoneFormatted": "1-202-882-2902"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.47281,
+                    38.7504
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "9425 West St, Manassas, VA 20110",
+                "Directions": "https://goo.gl/maps/bRBFufCzJPqWtrRV6",
+                "Name": "Jirani Coffeehouse",
+                "Phone": "15715352442",
+                "Type": "Restaurant",
+                "Website": "http://www.jiranicoffeehouse.com/",
+                "phoneFormatted": "1-571-535-2442"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.599973,
+                    39.268918
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1704 Whetstone Way, Baltimore, MD 21230",
+                "Directions": "https://goo.gl/maps/vGzvatUyvxpXYzxD6",
+                "Name": "The Urban Oyster",
+                "Phone": "14439485898",
+                "Type": "Restaurant",
+                "Website": "http://www.theurbanoyster.com/",
+                "phoneFormatted": "1-443-948-5898"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.906224,
+                    38.802797
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "6349 Old Branch Ave, Camp Springs, Maryland 20748",
+                "Directions": "https://goo.gl/maps/3J5emyp8vYDQCUb57",
+                "Name": "Blue Waters Caribbean & Seafood Grill",
+                "Phone": "13014491600",
+                "Type": "Restaurant",
+                "Website": "http://www.bluewaterscsgrill.com/",
+                "phoneFormatted": "1-301-449-1600"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.994904,
+                    38.920706
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2350 Washington Pl NE, Washington, DC 20018",
+                "Directions": "https://goo.gl/maps/NAs7RaXS4QjaTTPM9",
+                "Name": "The Carolina Kitchen Bar & Grill",
+                "Phone": "12027331216",
+                "Type": "Restaurant",
+                "Website": "http://www.thecarolinakitchen.com/",
+                "phoneFormatted": "1-202-733-1216"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.951873,
+                    38.968387
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "6501 America Blvd, Hyattsville, MD 20782",
+                "Directions": "https://goo.gl/maps/ZPBHj2XMp4sQVEK79",
+                "Name": "Carolina Kitchen Bar & Grill",
+                "Phone": "13019272929",
+                "Type": "Restaurant",
+                "Website": "http://www.thecarolinakitchen.com/",
+                "phoneFormatted": "1-301-927-2929"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.846044,
+                    38.902988
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "Boulevard at the Capital Centre, Lake Arbor, Prince George's County, Maryland, 20744",
+                "Directions": "https://goo.gl/maps/6XAa7PLXpxyoknMn9",
+                "Name": "Carolina Kitchen",
+                "Phone": "13013502929",
+                "Type": "Restaurant",
+                "Website": "https://thecarolinakitchen.com/",
+                "phoneFormatted": "1-301-350-2929"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.849092,
+                    38.696835
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "14125 Brandywine Rd, Brandywine, MD 20613",
+                "Directions": "https://goo.gl/maps/zJcTokeFZESDNvYy5",
+                "Name": "Crab Boss",
+                "Phone": "12408237810",
+                "Type": "Restaurant",
+                "Website": "https://www.crabboss.com/",
+                "phoneFormatted": "1-240-823-7810"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.908332,
+                    38.801551
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "5830 Allentown Way, Camp Springs, MD 20748",
+                "Directions": "https://goo.gl/maps/oAG2yhNo1xiUS4z46",
+                "Name": "Spizzy Smoothies and Teas",
+                "Phone": "",
+                "Type": "Restaurant",
+                "Website": "http://drinkspizzy.com/",
+                "phoneFormatted": ""
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.935658,
+                    38.96282
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "6202 Rhode Island Ave, Riverdale, MD 20737",
+                "Directions": "https://goo.gl/maps/g8aYXAqzWqN5Zbd39",
+                "Name": "Gangster Vegan Riverdale",
+                "Phone": "12406672648",
+                "Type": "Restaurant",
+                "Website": "http://www.gangstervegandmv.com/",
+                "phoneFormatted": "1-240-667-2648"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.61333,
+                    39.276809
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1065 S Charles St, Baltimore, MD 21230",
+                "Directions": "https://goo.gl/maps/KUbBcJfzriXuFTeeA",
+                "Name": "Gangster Vegan Organics",
+                "Phone": "14106178903",
+                "Type": "Restaurant",
+                "Website": "https://www.gangstervegandmv.com/",
+                "phoneFormatted": "1-410-617-8903"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.050591,
+                    39.040331
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2405 Price Ave, Wheaton, MD 20902",
+                "Directions": "https://goo.gl/maps/Ls5g9yoUHXyoPAAK8",
+                "Name": "Hakuna Matata Grill",
+                "Phone": "12406696800",
+                "Type": "Restaurant",
+                "Website": "http://www.hakunamatatagrill.com/",
+                "phoneFormatted": "1-240-669-6800"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.038891,
+                    38.916847
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1704 U St NW, Washington, DC 20009",
+                "Directions": "https://goo.gl/maps/irSv6evm2sApCey46",
+                "Name": "Henry's Soul Cafe",
+                "Phone": "12022653336",
+                "Type": "Restaurant",
+                "Website": "http://henryssoulcafe.com/",
+                "phoneFormatted": "1-202-265-3336"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.998779,
+                    38.804257
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "5431 MD-210, Oxon Hill, MD 20745",
+                "Directions": "https://goo.gl/maps/1r411UKh6ELCpCcm6",
+                "Name": "Henry's Soul Cafe",
+                "Phone": "13017496856",
+                "Type": "Restaurant",
+                "Website": "http://henryssoulcafe.com/",
+                "phoneFormatted": "1-301-749-6856"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.832103,
+                    38.951604
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "4601 presidents drive buena vista maryland, 20706",
+                "Directions": "https://goo.gl/maps/3DZ8dcnRN7cxckw16",
+                "Name": "KitchenCray Cafe",
+                "Phone": "13015771425",
+                "Type": "Restaurant",
+                "Website": "http://www.kitchencray.com/",
+                "phoneFormatted": "1-301-577-1425"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.876222,
+                    38.655988
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2064 Crain Hwy, Waldorf, MD 20601",
+                "Directions": "https://goo.gl/maps/zrTBnWemFQaQMmGe6",
+                "Name": "Lefty's Barbecue",
+                "Phone": "13016383813",
+                "Type": "Restaurant",
+                "Website": "http://www.leftysbarbecue.com/ordereze/Catering/Summary.aspx",
+                "phoneFormatted": "1-301-638-3813"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.890291,
+                    38.617503
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3645 Leonardtown Rd, Waldorf, MD 20602",
+                "Directions": "https://goo.gl/maps/iZXmJZtJZzZGSDw58",
+                "Name": "Legacy Carryout & Catering",
+                "Phone": "12407547308",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "1-240-754-7308"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.02836,
+                    38.961062
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "5832 Georgia Ave NW, Washington, DC 20011",
+                "Directions": "https://goo.gl/maps/Y1yrwr1w13ametMW6",
+                "Name": "The Bar @ Milk & Honey",
+                "Phone": "12028498740",
+                "Type": "Restaurant",
+                "Website": "https://www.milknhoneycafe.com/",
+                "phoneFormatted": "1-202-849-8740"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.988692,
+                    38.899973
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1245 H St NE, Washington, DC 20002",
+                "Directions": "https://goo.gl/maps/yuaTxERJ3mLbrqjS8",
+                "Name": "Milk & Honey In Smith Commons",
+                "Phone": "12023960038",
+                "Type": "Restaurant",
+                "Website": "https://www.milknhoneycafe.com/",
+                "phoneFormatted": "1-202-396-0038"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.930955,
+                    39.002066
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "10280 Baltimore Ave, College Park, MD 20740",
+                "Directions": "https://goo.gl/maps/6ov26ALs4FcAcdSd8",
+                "Name": "Milk & Honey - College Park, MD",
+                "Phone": "13014772195",
+                "Type": "Restaurant",
+                "Website": "https://www.milknhoneycafe.com/",
+                "phoneFormatted": "1-301-477-2195"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.910279,
+                    39.034282
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "4715 Sellman Rd Beltsville, MD 20705",
+                "Directions": "https://goo.gl/maps/wrmGLKFRPLnw9Joq5",
+                "Name": "Miya Lounge & Restaurant",
+                "Phone": "12403916593",
+                "Type": "Restaurant",
+                "Website": "http://www.miyalounge.com/",
+                "phoneFormatted": "1-240-391-6593"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.839364,
+                    39.107222
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "9590 N Laurel Rd, Laurel, MD 20723",
+                "Directions": "https://goo.gl/maps/PZ7HxgRfu7pML3wM6",
+                "Name": "Monikay's Kitchen",
+                "Phone": "13014981040",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "1-301-498-1040"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.987301,
+                    38.866969
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1243 Good Hope Rd SE, Washington, DC 20020",
+                "Directions": "https://goo.gl/maps/d7hBXKpBZSdpDqXCA",
+                "Name": "Open Crumb",
+                "Phone": "12026109979",
+                "Type": "Restaurant",
+                "Website": "",
+                "phoneFormatted": "1-202-610-9979"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.621036,
+                    39.294707
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "429 N Eutaw St, Baltimore, MD 21201",
+                "Directions": "https://goo.gl/maps/PJnSnQUsD1sno1kG6",
+                "Name": "Refocused Vegan",
+                "Phone": "14109605040",
+                "Type": "Restaurant",
+                "Website": "http://www.refocusedvegan.com/",
+                "phoneFormatted": "1-410-960-5040"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.050082,
+                    39.006644
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "2341 Distribution Cir, Silver Spring, MD 20910",
+                "Directions": "https://goo.gl/maps/Qims2DhAFLy4xtvQ7",
+                "Name": "SILVER SPRING WINGS",
+                "Phone": "12028768000",
+                "Type": "Restaurant",
+                "Website": "https://www.silverspringwings.com/",
+                "phoneFormatted": "1-202-876-8000"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.044514,
+                    38.905482
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "1990 M St NW, Washington, DC 20036",
+                "Directions": "https://goo.gl/maps/GsUWNMsvb7H6t1r59",
+                "Name": "Swahili Village - The Consulate DC",
+                "Phone": "12026292353",
+                "Type": "Restaurant",
+                "Website": "https://swahilivillages.com/",
+                "phoneFormatted": "1-202-629-2353"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.955344,
+                    38.939041
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3809 Rhode Island Ave, Brentwood, MD 20722",
+                "Directions": "https://goo.gl/maps/nNwnki56WvvXHiqL8",
+                "Name": "The Shell Shack Seafood",
+                "Phone": "2407721185",
+                "Type": "Restaurant",
+                "Website": "https://theshellshackseafood.com/",
+                "phoneFormatted": "240-772-1185"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.955344,
+                    38.939041
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3809 Rhode Island Ave, Brentwood, MD 20722",
+                "Directions": "https://goo.gl/maps/s64J7yvmv2gttbuZ9",
+                "Name": "The Uncaged Chefs",
+                "Phone": "13016644233",
+                "Type": "Restaurant",
+                "Website": "https://theuncagedchefs.com/contact-us/",
+                "phoneFormatted": "1-301-664-4233"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.964672,
+                    38.95605
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3010 Hamilton St, Hyattsville, MD 20782",
+                "Directions": "https://goo.gl/maps/1PgiFSyvCgSdQmAF7",
+                "Name": "Trinity Grill & Bar",
+                "Phone": "12407706611",
+                "Type": "Restaurant",
+                "Website": "https://www.trinitygrillandbar.com/",
+                "phoneFormatted": "1-240-770-6611"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -77.024397,
+                    38.934966
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "Address": "3632 Georgia Ave NW, Washington, DC 20010",
+                "Directions": "https://goo.gl/maps/jLQYWfRbL2sePBvYA",
+                "Name": "Mr. Braxton Bar & Kitchen",
+                "Phone": "12028824555",
+                "Type": "Bar",
+                "Website": "https://www.mrbraxton.com/",
+                "phoneFormatted": "1-202-882-4555"
+            },
+            "type": "Feature"
         }
     ],
     "type": "FeatureCollection"

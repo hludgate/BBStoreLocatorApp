@@ -30,7 +30,11 @@ with open(csvFilePath) as file:
         name = rows['Name']
         add = rows['Address']
         phone = rows['Phone']
-        format_phone = phone_format(phone)
+        try:
+            format_phone = phone_format(phone)
+        except:
+            format_phone = ''
+            
         btype = rows['Type']
         web = rows['Website']
         location = geolocator.geocode(add)
