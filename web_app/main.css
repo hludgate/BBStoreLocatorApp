@@ -1,9 +1,10 @@
 body {
-    color:#404040;
+    color:#000000;
     font:400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
     margin:0;
     padding:0;
     -webkit-font-smoothing:antialiased;
+    background:#EFB543;
   }
 
   * {
@@ -36,7 +37,9 @@ body {
     margin:0;
     font-weight:400;
     line-height: 20px;
-    padding: 20px 2px;
+    padding-left: 20px;
+    
+    
   }
 
   a {
@@ -52,11 +55,21 @@ body {
   .heading {
     background:#fff;
     border-bottom:1px solid #eee;
-    min-height:60px;
-    line-height:60px;
-    padding:0 10px;
+    min-height:100px;
+    line-height:100px;
+    font-family: sans-serif;
     background-color: #00853e;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    
+  }
+
+  .header-img {
+    width: 25%;
+    height: 110px;
+    background: url('sankofaeats-full_logo-removebg.png');
+    background-size: cover;
+    
+    
   }
 
   .listings {
@@ -117,9 +130,9 @@ body {
   .marker {
     border: none;
     cursor: pointer;
-    height: 56px;
-    width: 56px;
-    background-image: url(fist_marker_crop.png);
+    height: 42px;
+    width: 30px;
+    background-image: url(marker1.png);
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -149,8 +162,8 @@ body {
     padding:1%;
   }
   .mapboxgl-popup-content h3 {
-    background:#91c949;
-    color:#fff;
+    background:#00853e;
+    color:#000000;
     margin:0;
     display:block;
     padding:10px;
@@ -164,10 +177,19 @@ body {
     display:block;
     padding: 10px 10px 10px 10px;
     font-weight:400;
+    background-color: #ffffff;
   }
+  .mapboxgl-popup-content a {
+    margin:0;
+    display:block;
+    padding: 10px 10px 10px 10px;
+    font-weight:400;
+    background-color: #ffffff;
+  }  
 
   .mapboxgl-popup-content div {
     padding:10px;
+    background-color: #ffffff;
   }
 
   .mapboxgl-container .leaflet-marker-icon {
@@ -179,5 +201,5 @@ body {
   }
 
   .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
-    border-bottom-color: #91c949;
+    border-bottom-color: #818E44;
   }

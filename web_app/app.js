@@ -250,7 +250,7 @@ var map = new mapboxgl.Map({
             '<h4>' + currentFeature.properties.Address + '</h4>' +
             '<h4>' + currentFeature.properties.phoneFormatted + '</h4>' +
             '<a href = ' + currentFeature.properties.Directions + '>Directions</a>' + 
-            '<p>    </p>' +
+            
             '<a href = ' + currentFeature.properties.Website + '>Website</a>')
           .addTo(map);
       }

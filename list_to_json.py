@@ -22,7 +22,7 @@ csvFilePath = 'list.csv'
 jsonFilePath = 'list.geojson'
 data = {}
 features = []
-geolocator = Nominatim(user_agent="temp")
+geolocator = Nominatim(user_agent="temp", timeout= 10)
 id = 0
 with open(csvFilePath) as file:
     reader = csv.DictReader(file)
