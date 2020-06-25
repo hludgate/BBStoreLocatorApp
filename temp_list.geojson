@@ -1,5 +1,5 @@
 
-    "features": [
+
         {
             "geometry": {
                 "coordinates": [
@@ -1786,5 +1786,4 @@
             },
             "type": "Feature"
         }
-    ],
-    "type": "FeatureCollection"
+
