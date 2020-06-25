@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart' show BitmapDescriptor;
 import 'package:sankofaeats/models/place.dart';
@@ -7,7 +8,17 @@ import 'package:sankofaeats/services/geolocator_service.dart';
 import 'package:sankofaeats/services/places_service.dart';
 import 'package:provider/provider.dart';
 
-void main() => runApp(MyApp());
+
+
+
+
+
+Future main() async {
+  await DotEnv().load('.env');
+  runApp(MyApp());
+}
+
+
 
 class MyApp extends StatelessWidget {
   final locatorService = GeoLocatorService();
