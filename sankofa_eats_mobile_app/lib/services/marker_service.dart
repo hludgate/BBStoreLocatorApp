@@ -13,6 +13,7 @@ class MarkerService {
           icon: place.icon,
           infoWindow: InfoWindow(title: place.properties.name, snippet: place.properties.address),
           position: LatLng(place.geometry.location.lat, place.geometry.location.lng)
+          
       );
 
       markers.add(marker);

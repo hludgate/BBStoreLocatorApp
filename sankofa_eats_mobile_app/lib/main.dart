@@ -3,6 +3,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart' show BitmapDescriptor;
 import 'package:sankofaeats/models/place.dart';
+import 'package:sankofaeats/screens/home.dart';
 import 'package:sankofaeats/screens/search.dart';
 import 'package:sankofaeats/services/geolocator_service.dart';
 import 'package:sankofaeats/services/places_service.dart';
@@ -40,12 +41,14 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        title: 'Parking App',
+        debugShowCheckedModeBanner: false,
+        title: 'Sankofa Eats',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Search(),
+        home: Home(),
       ),
     );
   }
 }
+

@@ -6,8 +6,11 @@ import 'package:provider/provider.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:sankofaeats/services/geolocator_service.dart';
 import 'package:sankofaeats/services/marker_service.dart';
+import 'package:sankofaeats/widgets/bottom_navigation_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../commons.dart';
 import '../models/place.dart';
+import 'home.dart';
 
 class Search extends StatelessWidget {
   @override
@@ -20,6 +23,7 @@ class Search extends StatelessWidget {
     return FutureProvider(
       create: (context) => placesProvider,
       child: Scaffold(
+        backgroundColor: green,
         body: (currentPosition != null)
             ? Consumer<List<Place>>(
           builder: (_, places, __) {
@@ -27,22 +31,24 @@ class Search extends StatelessWidget {
             return (places != null)
                 ? Column(
               children: <Widget>[
-                Container(
-                  height: MediaQuery.of(context).size.height / 3,
-                  width: MediaQuery.of(context).size.width,
-                  child: GoogleMap(
+                SafeArea(
+                  child: Container(
+                    height: MediaQuery.of(context).size.height *2 / 3,
+                    width: MediaQuery.of(context).size.width,
+                    child: GoogleMap(
 
-                    initialCameraPosition: CameraPosition(
-                        target: LatLng(38.89511,    //this makes it start on DC since it was a pain for me to scroll over there from my location
-                            -77.03637),   // change to currentPosition.latitude and longitude if you want
-                        zoom: 9.0),
-                    zoomGesturesEnabled: true,
+                      initialCameraPosition: CameraPosition(
+                          target: LatLng(38.89511,    //this makes it start on DC since it was a pain for me to scroll over there from my location
+                              -77.03637),   // change to currentPosition.latitude and longitude if you want
+                          zoom: 9.0),
+                      zoomGesturesEnabled: true,
 //            onMapCreated: (GoogleMapController controller) {
 //            _controller.complete(controller);
 //            },
-                      markers: Set<Marker>.of(markers),
+                        markers: Set<Marker>.of(markers),
 
 
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -121,6 +127,30 @@ class Search extends StatelessWidget {
         )
             : Center(
           child: CircularProgressIndicator(),
+        ),
+        bottomNavigationBar: Container(
+            height: 70,
+            color: green,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                RaisedButton(
+                  color: green,
+                  child: BottomNavIcon(
+                      image: "home.png",
+                      name: "Home"
+                  ),
+                  onPressed: () {
+                    Navigator.pop(context);
+
+
+                  },
+                )
+
+
+
+              ],
+            )
         ),
       ),
     );

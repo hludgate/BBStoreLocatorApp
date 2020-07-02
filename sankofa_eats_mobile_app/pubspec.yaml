@@ -36,14 +36,19 @@ dependencies:
   http: ^0.12.1
   flutter_rating_bar: ^3.0.1+1
   flutter_dotenv: ^2.1.0
+  flutter_google_places: ^0.2.5
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.7.0"
   flutter_test:
     sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_icons:
+  ios: true
+  android: "launcher_icon"
+  image_path: "assets/images/icon.png"
 # The following section is specific to Flutter.
 flutter:
 
