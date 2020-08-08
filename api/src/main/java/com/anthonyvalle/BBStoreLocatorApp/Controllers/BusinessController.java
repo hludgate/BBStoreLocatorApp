@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/v1/business/")
@@ -41,11 +42,8 @@ public class BusinessController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<String> deleteBusiness(@PathVariable String id){
-        return new ResponseEntity<String>(businessService.deleteById(id), HttpStatus.OK);
+    public ResponseEntity<Map> deleteBusiness(@PathVariable String id){
+        return new ResponseEntity<Map>(businessService.deleteById(id), HttpStatus.OK);
     }
-
-
-
 
 }

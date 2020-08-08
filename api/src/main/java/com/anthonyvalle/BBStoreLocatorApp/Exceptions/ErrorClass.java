@@ -2,16 +2,24 @@ package com.anthonyvalle.BBStoreLocatorApp.Exceptions;
 
 import org.springframework.http.HttpStatus;
 
-public class ErrorClass {
+/**
+ * Use as a base exception class
+ */
+
+public abstract class ErrorClass extends RuntimeException {
 
     private long statusCode;
     private HttpStatus httpStatus;
-    private String message;
+
 
     public ErrorClass(long statusCode, HttpStatus httpStatus, String message) {
         this.statusCode = statusCode;
         this.httpStatus = httpStatus;
-        this.message = message;
+    }
+
+    public ErrorClass(String message) {
+        super(message);
+
     }
 
     public ErrorClass() {
@@ -33,11 +41,5 @@ public class ErrorClass {
         this.httpStatus = httpStatus;
     }
 
-    public String getMessage() {
-        return message;
-    }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
 }
